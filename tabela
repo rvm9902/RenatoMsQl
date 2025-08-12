@@ -1,0 +1,37 @@
+create database cadastro_cliente
+default character set utf8mb4
+default collate utf8mb4_general_ci;
+use cadastro_cliente;
+create table if not exists pessoas (
+id BigInt not null auto_increment primary key,
+nome varchar(30) not null,
+nascimento date,
+sexo enum( 'M', 'F'), 
+peso decimal (5,2),
+nacionalidade varchar(20) default 'brasil'
+) default charset = utf8mb4;
+
+INSERT INTO NomeDaTabela
+(colunal, coluna2, coluna3)
+VALUES
+('valor1', 'valor2', 'valor3');
+
+create table dados(
+id bigint not null auto_increment primary key,
+nome varchar(30),
+sexo enum (M', 'F'),
+preco_produto  decimal (8,2),
+quantidade int,
+nascimento date,
+cadastro datetime,
+ativo boolean,
+descricao text,
+estado char(2)
+);
+
+insert into dados
+(id, nome, sexo, preco_produto, quantidade, nascimento, cadastro, ativo, descricao, estado)
+values
+)default, Vander', '', 1.99 10:30:55 30-07-2025' ,'28-02-2005 و20 و', true, 'novo', 'PR'(;
+
+select*from dados;
